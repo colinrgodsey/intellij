@@ -4,6 +4,7 @@ import com.soywiz.korma.geom.Point
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import main.lib.Greeting
+import okhttp3.OkHttp
 
 object Main {
   /**
@@ -22,6 +23,7 @@ object Main {
 
     for (i in 0 until num) {
       val p = Point(1, 1)
+      val httpV = OkHttp.VERSION
       launch { println(Greeting.getGreeting(i + 1)) }
     }
 

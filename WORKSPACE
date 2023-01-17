@@ -602,3 +602,14 @@ jvm_maven_import_external(
         "https://repo.maven.apache.org/maven2",
     ],
 )
+
+
+jvm_maven_import_external(
+    name = "com_squareup_okhttp3_okhttp",
+    artifact = "com.squareup.okhttp3:okhttp:4.9.0",
+    artifact_sha256 = "dbc2bb04ecb002b9f4046263ccad996f4a3d3c59a0cc98837e300a6700571f7c",
+    fetch_sources = True,
+    server_urls = [
+        "https://repo.maven.apache.org/maven2",
+    ],
+)

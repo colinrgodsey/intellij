@@ -17,6 +17,7 @@ kt_jvm_binary(
     deps = [
         ":greeting_lib",
         "@kotlinx_coroutines//jar",
+        "@com_squareup_okhttp3_okhttp//jar",
         "@com_soywiz_korlibs_korma_korma_jvm_2_7_0//jar",
     ],
 )
