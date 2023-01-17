@@ -589,3 +589,16 @@ jvm_maven_import_external(
     licenses = ["notice"],  # Apache 2.0
     server_urls = ["https://repo1.maven.org/maven2"],
 )
+
+
+# Test stuff
+
+jvm_maven_import_external(
+    name = "com_soywiz_korlibs_korma_korma_jvm_2_7_0",
+    artifact = "com.soywiz.korlibs.korma:korma-jvm:2.7.0",
+    artifact_sha256 = "44e5001eb64bfca5bd04fdbe7c9070631222d71a6c13e46ca9818eeb34c644c3",
+    fetch_sources = True,
+    server_urls = [
+        "https://repo.maven.apache.org/maven2",
+    ],
+)

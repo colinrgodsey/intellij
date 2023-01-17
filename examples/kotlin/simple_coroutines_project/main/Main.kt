@@ -1,5 +1,6 @@
 package main
 
+import com.soywiz.korma.geom.Point
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import main.lib.Greeting
@@ -20,6 +21,7 @@ object Main {
       }
 
     for (i in 0 until num) {
+      val p = Point(1, 1)
       launch { println(Greeting.getGreeting(i + 1)) }
     }
 
